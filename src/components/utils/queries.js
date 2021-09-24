@@ -13,13 +13,22 @@ export const LOAD_ALL_PEOPLE = gql`
             height
             mass
             skinColor
-            vehicleConnection {
-            totalCount
-            vehicles {
+            species {
                 name
-                model
+                classification 
                 id
             }
+            homeworld {
+                name
+                id
+            }
+            vehicleConnection {
+                totalCount
+                vehicles {
+                    name
+                    model
+                    id
+                }
             }
             created
             edited
