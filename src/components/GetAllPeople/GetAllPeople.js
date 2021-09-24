@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client'
 import React from 'react'
+import Loading from '../Loading/Loading';
 import { LOAD_ALL_PEOPLE } from '../utils/queries'
 
 const GetAllPeople = () => {
@@ -19,7 +20,12 @@ const GetAllPeople = () => {
 
     return (
         <div>
-            
+            {
+                loading && <Loading />
+            }
+            {
+                error && <p>error</p>
+            }
         </div>
     )
 }
