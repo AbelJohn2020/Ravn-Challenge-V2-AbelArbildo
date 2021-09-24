@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: #EC5757;
+    /* font-family: 'SF Pro Display'; */
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.0125em;
+}

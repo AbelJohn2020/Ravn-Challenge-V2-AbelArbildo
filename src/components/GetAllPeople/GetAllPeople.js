@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client'
 import React from 'react'
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loading from '../Loading/Loading';
 import { LOAD_ALL_PEOPLE } from '../utils/queries'
 
@@ -24,7 +25,7 @@ const GetAllPeople = () => {
                 loading && <Loading />
             }
             {
-                error && <p>error</p>
+                error && <ErrorMessage />
             }
         </div>
     )
