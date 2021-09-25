@@ -20,15 +20,21 @@ function App() {
   }
 
   const getPeople = getData();
-  console.log(getPeople);
 
   return (
     <div className="App">
       <Router>
         <Navbar />
         <div className="body">
-          <GetAllPeople loading={loading} error={error} getPeople={getPeople} />
+          <div className="body__left">
+            <GetAllPeople loading={loading} error={error} getPeople={getPeople} />
+          </div>
           <Switch>
+            <Route exact path="/">
+              <div className="body__responsive">
+                <GetAllPeople loading={loading} error={error} getPeople={getPeople} />
+              </div>
+            </Route>
             {
               getPeople && getPeople.map(character => (
                 <Route exact path={`/${character.name}`} key={character.id}>

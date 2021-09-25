@@ -10,3 +10,11 @@
 .getAllPeople::-webkit-scrollbar {
     width: 0;
 }
+
+@media(max-width: 420px) {
+    .getAllPeople {
+        padding: 0;
+        border-right: none;
+        height: 102vh;
+    }
+}

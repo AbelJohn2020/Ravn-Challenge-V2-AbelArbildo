@@ -1,8 +1,17 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 
+.container,
+.container__general-information,
+.characteristic-title,
+.characteristic,
+.container__general-information--title,
+.container__general-information--characteristic,
+.characteristic-title {
+    box-sizing: border-box;
+}
+
 .container {
     width: 100%;
-    box-sizing: border-box;
     display: block;
     margin: 0;
     padding: 0 10%;
@@ -48,4 +57,14 @@
 
 .characteristic-title {
     color: #828282;
+}
+
+@media(max-width: 420px) {
+    .container {
+        padding: 0 16px 0 0;
+    }
+    
+    .container__general-information--characteristic {
+        padding: 14px 4px 16px 0;
+    }
 }

@@ -9,3 +9,27 @@
     display: grid;
     grid-template-columns: 25% 75%;
 }
+
+.body__responsive {
+    display: none;
+}
+
+@media(max-width: 787px) {
+    .body {
+        grid-template-columns: 32% 68%;
+    }
+}
+
+@media(max-width: 420px) {
+    .body {
+        display: block;
+    }
+
+    .body__responsive {
+        display: block;
+    }
+
+    .body__left {
+        display: none;
+    }
+}

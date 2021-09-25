@@ -1,0 +1,63 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+.navbarResponsiveWithButton,
+.Navbar {
+    width: 100%;
+    box-sizing: border-box;
+    background: #333333;
+    color:#F2F2F2;
+    padding: 18px 32px;
+    margin: 0;
+}
+
+.Navbar__title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.0125em;
+    text-transform: capitalize;
+}
+
+.navbarResponsive {
+    display: none;
+}
+
+@media(max-width: 420px) {
+    .desktop {
+        display: none;
+    }
+
+    .navbarResponsive {
+        display: block;
+    }
+
+    .Navbar__title {
+        text-align: center;
+        margin: 0;
+        padding: 0 16px 0 0;
+    }
+
+    .navbarResponsiveWithButton {
+        padding: 18px 32px 14px 8px;
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+
+    .Navbar {
+        padding: 18px 32px 22px 32px;
+    }
+
+    .backIcon {
+        font-size: 24px;
+        color: #F2F2F2;
+    }
+
+    .btn {
+        box-sizing: border-box;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+}
