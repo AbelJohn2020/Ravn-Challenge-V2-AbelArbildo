@@ -1,5 +1,6 @@
 .getAllPeople {
     width: 352px;
+    min-height: 98vh;
     border-right: #DDDDDD solid 2px;
     padding: 0 0 0 16px;
 }
