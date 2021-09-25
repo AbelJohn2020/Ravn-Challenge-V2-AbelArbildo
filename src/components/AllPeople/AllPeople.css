@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+.box {
+    box-sizing: border-box;
+    width: 100%;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 16px 0;
+    border-bottom: #DDDDDD solid 2px;
+}
+
+.box__person {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box__person--name {
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.0125em;
+    margin: 0 0 4px 0;
+}
+
+.box__person--planet {
+    box-sizing: border-box;
+    margin: 0;
+    color: #828282;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.0125em;
+}

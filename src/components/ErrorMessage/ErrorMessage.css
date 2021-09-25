@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
 .container {
     width: 100%;
     display: flex;
@@ -7,7 +9,7 @@
 
 .error {
     color: #EC5757;
-    /* font-family: 'SF Pro Display'; */
+    font-family: 'SF Pro Display';
     font-weight: bold;
     font-style: normal;
     font-size: 18px;

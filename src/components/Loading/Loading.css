@@ -1,4 +1,4 @@
-
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 
 .loading {
     width: 100%;
@@ -9,7 +9,7 @@
 
 .title {
     color: #828282;
-    /* font-size: 'SF Pro Display'; */
+    font-family: 'SF Pro Display';
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
