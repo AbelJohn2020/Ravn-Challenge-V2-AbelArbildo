@@ -1,5 +1,15 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 
+.box-link {
+    text-decoration: none;
+    outline: none;
+    color: none;
+}
+
+.box-link:visited {
+    color: none;
+}
+
 .box {
     box-sizing: border-box;
     width: 100%;
@@ -7,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 16px 16px 0;
+    padding: 16px 28px 16px 0;
     border-bottom: #DDDDDD solid 2px;
 }
 

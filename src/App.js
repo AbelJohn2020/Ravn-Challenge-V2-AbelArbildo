@@ -4,6 +4,8 @@ import GetAllPeople from './components/GetAllPeople/GetAllPeople';
 import { LOAD_ALL_PEOPLE } from './components/utils/queries';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Character from './components/Character/Character';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   const { loading, error, data } = useQuery(LOAD_ALL_PEOPLE);
@@ -23,16 +25,19 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <GetAllPeople loading={loading} error={error} getPeople={getPeople} />
-        {/* <Switch>
-          {
-            getPeople.map(data => (
-              <Route exact path={``}>
-
-              </Route>
-            ))
-          }
-        </Switch> */}
+        <Navbar />
+        <div className="body">
+          <GetAllPeople loading={loading} error={error} getPeople={getPeople} />
+          <Switch>
+            {
+              getPeople && getPeople.map(character => (
+                <Route exact path={`/${character.name}`} key={character.id}>
+                  <Character getPeople={character} />
+                </Route>
+              ))
+            }
+          </Switch>
+        </div>
       </Router>
     </div>
   );

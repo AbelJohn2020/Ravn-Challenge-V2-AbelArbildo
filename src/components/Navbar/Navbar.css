@@ -1,0 +1,20 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+.Navbar {
+    width: 100%;
+    box-sizing: border-box;
+    background: #333333;
+    color:#F2F2F2;
+    padding: 18px 32px;
+    margin: 0;
+}
+
+.Navbar__title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.0125em;
+    text-transform: capitalize;
+}

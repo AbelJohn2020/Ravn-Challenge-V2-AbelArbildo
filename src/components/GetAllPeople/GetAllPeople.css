@@ -1,6 +1,8 @@
 .getAllPeople {
-    width: 352px;
-    min-height: 98vh;
+    width: 100%;
+    height: 92vh;
+    box-sizing: border-box;
     border-right: #DDDDDD solid 2px;
     padding: 0 0 0 16px;
+    overflow-y: scroll;
 }
