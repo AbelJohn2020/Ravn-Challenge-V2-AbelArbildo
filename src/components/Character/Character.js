@@ -6,50 +6,50 @@ const Character = ({getPeople}) => {
     const vehicles = vehicleConnection.vehicles;
     return (
         <div className="container">
-            <div>
-                <h1>general information</h1>
+            <div className="container__general-information">
+                <h1 className="container__general-information--title">general information</h1>
                 <div>
-                    <div>
-                        <p>eye color</p>
-                        <p>{ eyeColor }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">eye color</p>
+                        <p className="characteristic">{ eyeColor }</p>
                     </div>
-                    <div>
-                        <p>hair color</p>
-                        <p>{ hairColor }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">hair color</p>
+                        <p className="characteristic">{ hairColor }</p>
                     </div>
-                    <div>
-                        <p>skin color</p>
-                        <p>{ skinColor }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">skin color</p>
+                        <p className="characteristic">{ skinColor }</p>
                     </div>
-                    <div>
-                        <p>birth year</p>
-                        <p>{ birthYear  }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">birth year</p>
+                        <p className="characteristic">{ birthYear  }</p>
                     </div>
-                    <div>
-                        <p>height</p>
-                        <p>{ height  }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">height</p>
+                        <p className="characteristic">{ height  }</p>
                     </div>
-                    <div>
-                        <p>weight</p>
-                        <p>{ mass  }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">weight</p>
+                        <p className="characteristic">{ mass  }</p>
                     </div>
-                    <div>
-                        <p>gender</p>
-                        <p>{ gender === 'n/a' ? "NA" : `${gender}` }</p>
+                    <div className="container__general-information--characteristic">
+                        <p className="characteristic-title">gender</p>
+                        <p className="characteristic">{ gender }</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="container__general-information">
                 {
                     vehicles.length > 0 &&     
                         <div>
-                            <h1>vehicles</h1>
+                            <h1 className="container__general-information--title">vehicles & model</h1>
                             <div>
                                 {
                                     vehicles.map(({id, name, model}) => (
-                                        <div key={id}>
-                                            <p>{ name }</p>
-                                            <p>{ model }</p>
+                                        <div key={id} className="container__general-information--characteristic">
+                                            <p className="characteristic-title">{ name }</p>
+                                            <p className="characteristic">{ model }</p>
                                         </div>
                                     ))
                                 }

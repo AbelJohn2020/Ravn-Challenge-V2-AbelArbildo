@@ -6,3 +6,7 @@
     padding: 0 0 0 16px;
     overflow-y: scroll;
 }
+
+.getAllPeople::-webkit-scrollbar {
+    width: 0;
+}
